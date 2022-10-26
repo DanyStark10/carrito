@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(20, 20, 20);
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: x-large;
+}

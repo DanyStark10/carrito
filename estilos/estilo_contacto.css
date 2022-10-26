@@ -1,0 +1,121 @@
+body{
+    width: 100%;
+    
+}
+
+header{
+    color:white;
+    font-size: 50px;
+    background: #0275d8;
+    
+}
+
+
+aside{
+    float:right;   
+    width: 35%; 
+    height: 105%;
+    margin-top: -47.568%;
+    background-color: #5bc0de;
+    text-align: center;
+}
+
+section{  
+    background-color: #0275d8;
+    width: 65%;
+    height: 105%;
+    text-align: center; 
+ 
+}
+
+img{
+    width: 7%;
+    height: 8%;   
+    float: left;
+    margin: 10px 2px;
+    padding-left: 60px;
+    
+}
+h1{
+    text-shadow: 7px 4px 7px black;
+    font-family: Century Gothic;
+    color:white;
+    padding-top: 85px;
+    font-size: 90px;
+    
+}
+p, h4{
+    margin: 1em 5em;
+    
+    font-family: Consolas;
+}
+
+h5{
+    font-family: calibri;
+    font-size: 20px;
+    margin-top: -40px;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+
+footer{
+    background-color: transparent;
+    color:lightpink;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 8px 8px 8px antiquewhite;
+}
+
+input{
+    margin: 1%;
+    width: 22%; 
+    margin-bottom: 2%;
+    border-radius: 7px;
+    background: white;
+    color: black;
+}
+
+/* input:invalid{
+    border-color: red;
+}
+textarea:invalid{
+    border-color: red;
+} */
+
+
+label{
+    font-family: "Consolas";
+    font-size: 90%;
+    
+}
+
+nav{
+    
+    font-family: Consolas;
+    color: lightpink;
+    text-align: center;
+   
+    margin: 20px; 
+    font-size: 20px;   
+    
+}
+
+ a{
+    text-decoration: none;
+    color: #0275d8;
+    
+}
+
+
+
+
+
+button{
+    border-radius: 5px;
+    width: 145px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    
+}

@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/foto_login.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.caja_login{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);  
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+}
+
+.error_message{
+    width: 50%;
+    height: 50px;
+    background:rgb(241, 112, 112);
+    border: 1px solid red;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.caja_login .foto_usuario{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.caja_login h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.caja_login label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.caja_login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.caja_login input[type="text"],
+.caja_login input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.caja_login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(77, 76, 76);
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+footer{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:20px;
+    width:100%;
+    background:black;
+    color: white;
+}

@@ -1,0 +1,20 @@
+body{
+    background: rgb(20,20,20);
+    color: white;
+
+}
+
+div{
+    margin-top: 100px;
+    margin-left: calc(50% - 150px);
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    font-weight: bold;
+}
+
+
+
