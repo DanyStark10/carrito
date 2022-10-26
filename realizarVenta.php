@@ -3,7 +3,8 @@
         session_start();
         include "conexion.php";
         $total = $_POST['total'];
-         $sql = "select producto.cantidad as p_cantidad, carrito.cantidad as c_cantidad from producto, carrito where producto.id = carrito.id_producto and usuario='".$_SESSION['usuario']."'";
+        
+         $sql = "select producto.cant as p_cantidad, carrito.cantidad as c_cantidad from producto, carrito where producto.id = carrito.id_producto and usuario='".$_SESSION['usuario']."'";
          $result = mysqli_query($obj_conexion, $sql);
          $bandera = 1;
          while($fila = mysqli_fetch_assoc($result)){
@@ -25,7 +26,7 @@
 
             $sql = "select producto.id as pid, carrito.id as id, producto.nombre as nombre, producto.precio as precio, carrito.cantidad as cantidad, producto.precio * carrito.cantidad as subtotal from producto, carrito where producto.id = carrito.id_producto and usuario = '".$_SESSION['usuario']."'";
             $result = mysqli_query($obj_conexion, $sql);
-         
+            
          }elseif($total == null){
            header("location:carrito_compras.php");
          }else{
@@ -46,42 +47,44 @@
 
 <body>
     
-    <h1>GRACIAS POR TU COMPRA</h1>
+    <h1>DETALLES DE LA COMPRA</h1>
+    <a href="principal.php">VOLVER A PÁGINA PRINCIPAL</a>
+    <h1>PAGO TOTAL: $<?php echo number_format(intval($total),2)?></h1>
     <table>
-        <thead>
             <tr>
                 <th>NOMBRE</th>
                 <th>PRECIO</th>
                 <th>CANTIDAD</th>
                 <th>SUBTOTAL</th>
             </tr>
-            <tbody>
+            
                 <?php
+
+                    while($filas = mysqli_fetch_array($result)){ 
+                ?>
+            <tr>
+                <td><?php echo $filas['nombre']?></td>
+                <td>$<?php echo number_format(intval($filas['precio']),2)?></td>
+                <td><?php echo $filas['cantidad']?></td>
+                <td>$<?php echo number_format(intval($filas['subtotal']),2)?></td>
+            </tr>
+                <?php  
+                }
+
                 
-                    while($filas = mysqli_fetch_assoc($result)){
+                    $filas = mysqli_fetch_array($result);
                     $insertResumen = "insert into resumenVenta values (null, '".$lastId."', '".$filas['pid']."', '".$filas['cantidad']."');";
                     $resultado = mysqli_query($obj_conexion, $insertResumen);
                     $reducirSql = "update producto set cantidad = cantidad - ".$filas['cantidad']." where id = '".$filas['pid']."'";
                     $resultado = mysqli_query($obj_conexion, $reducirSql);
                     $borrarSql = "delete from carrito where id = '".$filas['id']."'";
                     $resultado = mysqli_query($obj_conexion, $borrarSql);
-                    
-                ?>
-                <tr>
-                    <td><?php echo $filas['nombre']?></td>
-                    <td>$<?php echo number_format(intval($filas['precio']),2)?></td>
-                    <td><?php echo $filas['cantidad']?></td>
-                    <td>$<?php echo number_format(intval($filas['subtotal']),2)?></td>
-                </tr>
-            </tbody>
-
-            <?php  } ?>
-        </thead>
+                 ?>
     </table>    
 
-    <h1>PAGO TOTAL: $<?php echo number_format(intval($total),2)?></h1>
+    
 
-    <a href="principal.php">VOLVER A PÁGINA PRINCIPAL</a>
+    
     
 </body>
 

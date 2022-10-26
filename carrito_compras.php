@@ -70,7 +70,7 @@
         <?php
             include "conexion.php";
             $usuario = $_SESSION['usuario'];
-            $sql = "select carrito.id as id, producto.nombre as nombre, producto.ruta_img as fuente, producto.precio as precio, carrito.cantidad as cantidad from producto, carrito where producto.id = carrito.id_producto and usuario = '".$usuario."'";
+            $sql = "select carrito.id as id, producto.nombre as nombre, producto.nombre_foto as fuente, producto.precio as precio, carrito.cantidad as cantidad from producto, carrito where producto.id = carrito.id_producto and usuario = '".$usuario."'";
             $result = mysqli_query($obj_conexion, $sql);
 
             $sql_cuenta = "select COUNT(*) as cuenta from carrito where usuario = '".$usuario."'";
