@@ -37,8 +37,8 @@
         </nav>
         
         <section>
-        <h1>OnlyShops</h1>
-        <h5>OnlyShops busca satisfacer las necesidades de compra que tenemos todos, a través de bienes de excelencia, originalidad y calidad. Nuestro modelo de negocio se basa en procesos de comercio electrónico, seguros y eficientes. Contamos con un equipo de trabajo altamente capacitado, con la mejor aptitud de servicio, sentido de la responsabilidad y ética, que busca dar un buen servicio y de calidad en el mejor tiempo posible. La innovación constante nos permite llegar al cliente con eficiencia. «Estamos siempre atentos a tus solicitudes y valoramos tus preguntas»</h5>
+        <h1>Shopper</h1>
+        <h5>Shopper busca satisfacer las necesidades de compra que tenemos todos, a través de bienes de excelencia, originalidad y calidad. Nuestro modelo de negocio se basa en procesos de comercio electrónico, seguros y eficientes. Contamos con un equipo de trabajo altamente capacitado, con la mejor aptitud de servicio, sentido de la responsabilidad y ética, que busca dar un buen servicio y de calidad en el mejor tiempo posible. La innovación constante nos permite llegar al cliente con eficiencia. «Estamos siempre atentos a tus solicitudes y valoramos tus preguntas»</h5>
         
         <form action="enviarMensajeContacto.php" method="POST" >
             <label>Nombre</label>
@@ -74,7 +74,7 @@
                 <h2>Correo:</h2>
               
                     <div>
-                        <h3>OnlyShops@shops.com</h3>
+                        <h3>@shops.com</h3>
                     </div>
                     
                    

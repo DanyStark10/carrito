@@ -64,15 +64,14 @@
             $mail->Port=587;
             $mail->SMTPSecure="tls";
             $mail->SMTPAuth=true;
-            $mail->Username="YourEmail";
-            $mail->Password="YourPassword"; 
-            $mail->addAddress($correo ,$nombre);
-            $mail->Subject= "Respuesta de Onlyshops a su peticion";
+            $mail->Username="shoppeinct@gmail.com";
+            $mail->Password="ociwerkdpmnibzlb"; 
+            $mail->addAddress($email ,$nombre);
+            $mail->Subject= "Confirmacion OnlyShops";
             $mail->isHTML();
-            $mail->Body= $mensaje;
-            $mail->From="YourEmail";
+            $mail->Body= $correo;
+            $mail->From="shoppeinct@gmail.com";
             $mail->FromName="Onlyshops";
-            
             if($mail->send())
             {
                 //echo "Email Has Been Sent Your Email Address";

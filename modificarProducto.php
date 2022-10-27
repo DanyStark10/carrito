@@ -51,13 +51,13 @@
         $precio = $_POST['precio'];
         $cantidad = $_POST['cantidad'];
         $temp = $_FILES['picture']['tmp_name'];
-
+        
         if($temp != null){
             $nombre_foto=basename($_FILES['picture']['name']);
             subirFoto($nombre_foto, $temp);
             if($nombre!=null || $precio!=null || $desc!=null || $cant!=null){
                 $sql2 = 'update producto set nombre = "'.$nombre.'", descripcion = "'
-                    .$desc.'", precio = "'.$precio.'", ruta_img = "img/'.$nombre_foto.'", cantidad = "'.$cantidad.'" where id = "'.$idp.'";';
+                    .$desc.'", precio = "'.$precio.'", nombre_foto = "img/'.$nombre_foto.'", cantidad = "'.$cantidad.'" where id = "'.$idp.'";';
                 mysqli_query($obj_conexion, $sql2); 
                 echo "<script>alert('Modificación correcta!');</script>";
                 echo "<script>window.history.go(-2)</script>";  

@@ -1,1 +1,7 @@
 
+id	|nombre	|edad	|email	|usuario	|contraseña	|activa
+2	|admin	|22	|daniel.silverio.acosta10@gmail.com	|silver10	|	|
+3	|Mauricio	|22	|danielsilver10@outlook.com	|user1	|	|
+8	|Yolanda	|22	|frefire.biyin@gmail.com	|user2	|	|
+15	|oscar	|22	|osacarpicos@gmail.com	|user5	|	|
+16	|Daniel Silverio	|22	|danielmessi485@gmail.com	|admin	|	|

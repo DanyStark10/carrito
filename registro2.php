@@ -28,7 +28,7 @@
 
         </form>
 
-     <footer class="ct blue">© 2022 OnlyShops All Rights Reserved</footer><br><br><br>
+     <footer class="ct blue">© 2022 Shopper All Rights Reserved</footer><br><br><br>
 
     </body>
 </html>

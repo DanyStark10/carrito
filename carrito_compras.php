@@ -38,7 +38,7 @@
         <div class = "page_nav">
             <h2><?php echo $usuario ?></h2>
             <a class="log" id="cerrarSesion" href="cerrar_sesion.php">Cerrar sesión</a>
-            <h1>Onlyshops</h1>
+            <h1>Shopper</h1>
         </div>
     
         <div class = "menu_container">
@@ -132,6 +132,6 @@
 
         <div class="clearfix"></div>
 
-        <footer class="ct blue">© 2022 OnlyShops All Rights Reserved</footer><br><br><br>
+        <footer class="ct blue">© 2022 Shopper All Rights Reserved</footer><br><br><br>
     </body>
 </html>

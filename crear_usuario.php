@@ -20,7 +20,7 @@ if($_POST['contrasenya'] != $_POST['ConfirmContrasenya']){
     $hash = md5($contrasenya);
     //https://castro-allan-301.000webhostapp.com/login_carritov0.2/activarCorreo.php?email=".$email."&hash=".$hash."
     $correo = "
-        Bienvenido a OnlyShops!
+        Bienvenido a Shoppers!
         Confirma tu correo entrando al siguiente link: 
 
         http://localhost/car/activarCorreo.php?email=".$email."&hash=".$hash."
@@ -32,7 +32,6 @@ if($_POST['contrasenya'] != $_POST['ConfirmContrasenya']){
     $sql = "select * from usuario";
     $result = mysqli_query($obj_conexion, $sql);
     $bandera = 1;
-   
     while($fila = mysqli_fetch_assoc($result)){
         if($fila['usuario'] == $usuario || $fila['email'] == $email){
             $bandera = 0;
@@ -44,22 +43,21 @@ if($_POST['contrasenya'] != $_POST['ConfirmContrasenya']){
         $sql = "insert into usuario values(null, '".$nombre."', '".$edad."', '".$email."', '".$usuario."',
                     '".$contrasenya."', '".$hash."', '0')";
         $result = mysqli_query($obj_conexion, $sql);
-        echo $result;
-        echo $email;
+
         $mail = new PHPMailer;
             $mail->SMTPDebug=0;
             $mail->isSMTP();
             $mail->Host="smtp.gmail.com";
             $mail->Port=587;
             $mail->SMTPSecure="tls";
-            $mail->SMTPAuth="login";
-            $mail->Username="danielmessi485@gmail.com";
-            $mail->Password=""; 
+            $mail->SMTPAuth=true;
+            $mail->Username="shoppeinct@gmail.com";
+            $mail->Password="ociwerkdpmnibzlb"; 
             $mail->addAddress($email ,$nombre);
             $mail->Subject= "Confirmacion OnlyShops";
             $mail->isHTML();
             $mail->Body= $correo;
-            $mail->From="danielmessi485@gmail.com";
+            $mail->From="shoppeinct@gmail.com";
             $mail->FromName="Onlyshops";
             
             if($mail->send())

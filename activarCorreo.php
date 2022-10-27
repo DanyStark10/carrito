@@ -3,7 +3,7 @@
     include "conexion.php";
     $correo = $_GET['email'];
     $hash = $_GET['hash'];
-
+    echo $correo;
     $sql1 = "select * from usuario where email = '".$correo."'";
     $result = mysqli_query($obj_conexion, $sql1);
     while($fila = mysqli_fetch_assoc($result)){
@@ -13,7 +13,7 @@
     if(isset($_GET['email']) && isset($_GET['hash'])){
 
         if($hashbd == $hash){
-            $sql = "update usuario set activa = 1 where email = '".$correo."' and hash = '".$hash."';";
+            $sql = "update usuario set activo = 1 where email = '".$correo."' and hash = '".$hash."';";
             mysqli_query($obj_conexion, $sql);
             echo'<h1 style="text-align:center; margin-top: 250px">TU CUENTA SE HA CONFIRMADO CON ÉXITO</h1>
                      <a href="registro.php" style = "font-size: large; text-decoration: none; color: green;

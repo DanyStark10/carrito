@@ -21,7 +21,7 @@
 
             OnlyShops
         ";
-
+            
             $mail = new PHPMailer;
             $mail->SMTPDebug=0;
             $mail->isSMTP();
@@ -29,18 +29,18 @@
             $mail->Port=587;
             $mail->SMTPSecure="tls";
             $mail->SMTPAuth=true;
-            $mail->Username="YourEmail";
-            $mail->Password="YourPassword"; 
-            $mail->addAddress("YourEmail" ,$nombre);
+            $mail->Username="danielmessi485@gmail.com";
+            $mail->Password="messi@10"; 
+            $mail->addAddress("daniel.silverio.acosta10@gmail.com" ,$nombre);
             $mail->Subject= "Un usuario te ha enviado un mensaje!";
             $mail->isHTML();
             $mail->Body= $email;
-            $mail->From="YourEmail";
-            $mail->FromName="Onlyshops";
+            $mail->From="danielmessi485@gmail.com";
+            $mail->FromName="Shopper";
             
             if($mail->send())
             {
-                //echo "Email Has Been Sent Your Email Address";
+                throw new Exception($mail->ErrorInfo);
             }
             else
             {

@@ -67,7 +67,7 @@
         if($bandera == 1){ 
             if($idp!=null && $nombre!=null && $edad!=null && $email!=null && $usuario!=null && $pswd!=null){
                 $sql = "update usuario set nombre='".$nombre."', edad='".$edad."', email='".$email."', 
-                            usuario='".$usuario."', password='".$pswd."' where id = '".$idp."';";
+                            usuario='".$usuario."', pswd='".$pswd."' where id = '".$idp."';";
                 mysqli_query($obj_conexion, $sql);
                 echo "<script>alert('Modificación correcta!');</script>";
                 echo "<script>window.history.go(-2)</script>"; 

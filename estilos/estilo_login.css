@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(../img/foto_login.png) no-repeat center top;
+    background: url(../img/foto_login2.jpeg) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
@@ -9,7 +9,7 @@ body{
 
 .blue{
     text-align: center;
-    background:#1b8ef3;
+    background:#0f1214;
     color: white;
 }
 .cl{
@@ -18,7 +18,7 @@ body{
 .caja_login{
     width: 320px;
     height: 480px;
-    background: #1b8ef3;
+    background: #090a0b;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -103,7 +103,7 @@ body{
     border: none;
     outline: none;
     height: 40px;
-    background: rgb(33, 6, 238);
+    background: rgb(155, 153, 26);
     color: white;
     font-size: 18px;
     border-radius: 20px;

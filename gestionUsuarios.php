@@ -110,8 +110,8 @@
                     <td><?php echo $filas['edad']?></td>
                     <td><?php echo $filas['email']?></td>
                     <td><?php echo $filas['usuario']?></td>
-                    <td><?php echo $filas['contrasenya']?></td>
-                    <td><?php echo $filas['activa']?></td>
+                    <td><?php echo $filas['pswd']?></td>
+                    <td><?php echo $filas['activo']?></td>
                     <td>
                         <a href="modificarUsuario.php?id=<?php echo $filas['id']?>">Modificar</a>/
                         <a href="bajaUsuario.php?id=<?php echo $filas['id']?>">Deshabilita-habilita</a>
@@ -128,7 +128,7 @@
         <input type="submit" style="border-radius:10px; background: white; color: black; font-weight: bold; padding: 10px; width: 500px; margin-left: calc(50% - 250px); margin-top: 10px;" value="Generar reporte">
     </form>
 
-    <footer class="ct blue">© 2022 OnlyShops All Rights Reserved</footer><br><br><br>
+    <footer class="ct blue">© 2022 Shopper All Rights Reserved</footer><br><br><br>
     
     
 </body>

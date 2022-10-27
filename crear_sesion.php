@@ -15,7 +15,7 @@ if(isset($_POST['usuario']) && isset($_POST['contrasenya'])){
         $activa = $fila['activo'];
         
     }
-    echo 'es tal '.$activa;
+    ##echo 'es tal '.$activa;
     if($contrasenya != null){
 
         if($contrasenya == $pswd){

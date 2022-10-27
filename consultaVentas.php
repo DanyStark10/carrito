@@ -156,7 +156,7 @@
 
                            
 
-    <footer class="ct blue">© 2022 OnlyShops All Rights Reserved</footer><br><br><br>
+    <footer class="ct blue">© 2022 Shoper All Rights Reserved</footer><br><br><br>
     
     
 </body>

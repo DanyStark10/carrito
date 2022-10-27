@@ -14,7 +14,6 @@ error_reporting(0);
 <body>
     
     <div class = "caja_login">
-        <!-- <img class="foto_usuario" src="img/foto_usuario.png" alt="foto_usuario"> -->
         <h1>Iniciar Sesión</h1>
         <script src="script/validalogin.js"></script>
         <form method="POST" action="crear_sesion.php" id="formulario">
@@ -30,7 +29,7 @@ error_reporting(0);
         </form>
     </div>
 
-    <footer class="ct blue">© 2022 OnlyShops All Rights Reserved</footer><br><br><br>
+    <footer class="ct black">© 2022 Shopper cart</footer><br><br><br>
 </body>
 
 </html>
